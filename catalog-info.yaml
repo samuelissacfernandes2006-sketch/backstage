@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: backstage
+  annotations:
+    github.com/project-slug: samuelissacfernandes2006-sketch/backstage
+spec:
+  type: other
+  lifecycle: unknown
+  owner: samuel
