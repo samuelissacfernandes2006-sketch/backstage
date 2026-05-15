@@ -21,12 +21,12 @@ spec:
                 region: "eu"                     
   template:      
     metadata:
-      name: 'eu-only-{{index .path.segments 1}}-{{.name}}'     
+      name: '{{index .path.segments 3}}-{{.name}}'     
     spec:
-      project: default
+      project: workflow-api
       source:
         repoURL: <a git repo>
-        targetRevision: HEAD
+        targetRevision: main
         path: '{{.path.path}}'
       destination:
         server: '{{.server}}'
@@ -35,6 +35,3 @@ spec:
       syncPolicy:
         syncOptions:
           - CreateNamespace=true  
-        automated: 
-          prune: true
-          selfHeal: true 
