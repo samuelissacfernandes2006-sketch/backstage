@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: workflow-api
+  namespace: argocd
+spec:
+  description: Projetos de workflow-api
+  sourceRepos:
+  - 'https://github.com/samuelissacfernandes2006-sketch/Teste'
+  destinations:
+  - server: 'https://kubernetes.default.svc'
+    name: kind-kind
+    namespace: workflow-api
+  clusterResourceWhitelist:
+  - group: '*'
+    kind: '*'
