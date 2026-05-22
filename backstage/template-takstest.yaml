@@ -1,9 +1,9 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: execute-aws-secret-list
-  title: Listar Segredos Na AWS
-  description: Criar Aplicação e recursos
+  name: meu teste
+  title: meu teste
+  description: meu teste
 spec:
   owner: samuel
   type: service
