@@ -16,7 +16,7 @@ spec:
       name: Processando dados
       action: sh
       command: |
-        echo hello
+        echo "hello"
   output:
     text:
       - title: Informação
