@@ -22,8 +22,8 @@ spec:
       action: sh
       input:
         command: |
-          PALAVRA=${{ parameters.environment }}"
-          echo "$PALAVRA"
+          ENVIRONMENT="${{ parameters.environment }}"
+          echo "$ENVIRONMENT"
           
   output:
     text:
