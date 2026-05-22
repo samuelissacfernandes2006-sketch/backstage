@@ -17,9 +17,6 @@ spec:
       action: sh
       command: |
       echo hello
-        
-      
-
   output:
     text:
       - title: Informação
