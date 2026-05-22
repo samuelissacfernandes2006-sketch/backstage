@@ -18,7 +18,6 @@ spec:
       input:
         command: |
           echo "hello"
-          clear
   output:
     text:
       - title: Informação
