@@ -17,6 +17,7 @@ spec:
       action: sh
       input:
         command: |
+          set -e
           echo "hello"
   output:
     text:
