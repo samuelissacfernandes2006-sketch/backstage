@@ -8,19 +8,21 @@ spec:
   owner: samuel
   type: service
   parameters:
-    - title: print hello
-      description: print hello
+    - title: Ambiente de Destino e Opções
+      required: [environment]
       properties:
         environment:
-          title: palavra
+          title: Ambiente
           type: string
+          enum: [dev-stg, dev, prod, stg]
+          default: dev
   steps:
     - id: print-hello
       name: print helo
       action: sh
       input:
         command: |
-          $PALAVRA="{{ parameters.environment }}"
+          $PALAVRA=${{ parameters.environment }}"
           echo "$PALAVRA"
           
   output:
