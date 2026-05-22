@@ -1,1 +1,25 @@
-teste
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: execute-aws-secret-list
+  title: Listar Segredos Na AWS
+  description: Criar Aplicação e recursos
+spec:
+  owner: samuel
+  type: service
+  parameters:
+    - title: print hello
+      description: print hello
+
+  steps:
+    - id: bash-data-processing
+      name: Processando dados
+      action: sh
+      command: |
+      echo hello
+        
+      
+
+  output:
+    text:
+      - title: Informação
