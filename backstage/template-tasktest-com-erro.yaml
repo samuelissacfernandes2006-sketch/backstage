@@ -10,14 +10,19 @@ spec:
   parameters:
     - title: print hello
       description: print hello
-
+      properties:
+        environment:
+          title: palavra
+          type: string
   steps:
     - id: print-hello
       name: print helo
       action: sh
       input:
         command: |
-          ech "hello"
+          $PALAVRA="{{ parametes.enviroment }}"
+          echo "$PALAVRA"
+          
   output:
     text:
       - title: Informação
