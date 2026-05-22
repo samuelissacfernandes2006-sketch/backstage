@@ -12,11 +12,12 @@ spec:
       description: print hello
 
   steps:
-    - id: bash-data-processing
-      name: Processando dados
+    - id: print-hello
+      name: print helo
       action: sh
-      command: |
-        printf '%s' "teste"
+      input:
+        command: |
+          echo "hello"
   output:
     text:
       - title: Informação
