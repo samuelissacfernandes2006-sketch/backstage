@@ -1,0 +1,23 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: meu-teste-com-erro
+  title: meu teste com erro
+  description: meu teste com erro
+spec:
+  owner: samuel
+  type: service
+  parameters:
+    - title: print hello
+      description: print hello
+
+  steps:
+    - id: print-hello
+      name: print helo
+      action: sh
+      input:
+        command: |
+          ech "hello"
+  output:
+    text:
+      - title: Informação
