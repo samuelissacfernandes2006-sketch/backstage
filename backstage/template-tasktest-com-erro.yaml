@@ -22,7 +22,7 @@ spec:
       action: sh
       input:
         command: |
-          $PALAVRA=${{ parameters.environment }}"
+          PALAVRA=${{ parameters.environment }}"
           echo "$PALAVRA"
           
   output:
