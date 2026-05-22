@@ -20,7 +20,7 @@ spec:
       action: sh
       input:
         command: |
-          $PALAVRA="{{ parametes.environment }}"
+          $PALAVRA="{{ parameters.environment }}"
           echo "$PALAVRA"
           
   output:
